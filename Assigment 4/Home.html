@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="Af">Afghanistan</option>
+                    <option value="Ak">Akrotiri</option>
+                    <option value="Au">Australia</option>
+                    <option value="Ban">Bangladesh</option>
+                    <option value="Brz">Brazil</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="FSAL">French Southern and Antarctic Lands</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Greenland">Greenland</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="USA">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="checkbox" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                <input type="checkbox" id="female" name="gender" value="Female"> <label for="female">Female</label>
+                <input type="checkbox" id="Other" name="gender" value="Other"> <label for="Other">Others</label>
+            </div>
+
+            <div class="form-group">
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="submit-button">Submit</button>
+                <button type="button" id="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <h2>Form Submission Details</h2>
+        <p><label>First Name:</label> <span id="popup-first-name"></span></p>
+        <p><label>Last Name:</label> <span id="popup-last-name"></span></p>
+        <p><label>Date of Birth:</label> <span id="popup-date-of-birth"></span></p>
+        <p><label>Country:</label> <span id="popup-country"></span></p>
+        <p><label>Gender:</label> <span id="popup-gender"></span></p>
+        <p><label>Profession:</label> <span id="popup-profession"></span></p>
+        <p><label>Email:</label> <span id="popup-email"></span></p>
+        <p><label>Mobile Number:</label> <span id="popup-mobile"></span></p>
+        <button type="button" id="close-popup">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
